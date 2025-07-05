@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh2.0</title>
+  <meta charset="UTF-8">
+  <title>Bangladesh 2.0</title>
+  <style>
+    
+    body {
+      margin: 30;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    
+    .header h1 {
+      font-size: 2.em;
+      color: #1f1f1f;
+      margin-right: 60px;
+      margin-left: 60px;
+      margin-bottom: 20px;
+    }
+
+    .header .signup-btn {
+      background-color: white;
+      color: #047857;
+      padding: 15px 20px;
+      font-size: 1em;
+      border: 2px solid #047857; /* ✅ Border added */
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 60px;
+      margin-top: 30px;
+}
+
+    .header {
+     display: flex;
+     justify-content: space-between; /* Pushes left & right content apart */
+     align-items: center;
+  
+  
+}
+
+
+    .header .signup-btn:hover {
+      background-color: #065f46;
+    }
+
+    
+
+    .banner-image {
+      flex: 1;
+      text-align: middle;
+    }
+
+    .banner-image img {
+      width: 200%;
+      max-width: 1400px;
+      border-radius: 15px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-top: 40px;
+
+    }
+
+   
+  </style>
 </head>
 <body>
-    
+
+  <!-- Header with Sign Up -->
+  <header class="header">
+    <h1>Bangladesh 2.0</h1>
+    <button class="signup-btn">Sign in</button>
+  </header>
+
+  
+    <div class="banner-image">
+      <img src="b2-images/banner.png" alt="Bangladesh Monument">
+    </div>
+  </section>
+
+  
 </body>
 </html>
