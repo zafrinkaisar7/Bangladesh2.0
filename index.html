@@ -156,6 +156,95 @@
       color: white;
     }
 
+    /* ===== Recent News Section ===== */
+    .news-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .news-section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #0f172a;
+    }
+
+    .news-card {
+      display: flex;
+      gap: 20px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .news-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 400px;
+      display: block;
+    }
+
+    .news-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .news-content h3 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      color: #1e293b;
+    }
+
+    .news-content p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      color: #4b5563;
+    }
+
+    .news-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9em;
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    .news-meta img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    .news-content button {
+      padding: 10px 20px;
+      background-color: #007f5f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .news-content button:hover {
+      background-color: #065f46;
+      transform: scale(1.05);
+    }
+
+    .card-right {
+      flex-direction: row-reverse;
+    }
+
+    /* ===== Responsive Design ===== */
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
@@ -169,6 +258,16 @@
       .card-container {
         flex-direction: column;
         gap: 30px;
+      }
+
+      .news-card,
+      .card-right {
+        flex-direction: column;
+      }
+
+      .news-image img {
+        max-width: 100%;
+        height: auto;
       }
     }
   </style>
@@ -190,28 +289,58 @@
   <section class="vision-section">
     <h2>The Vision of Future</h2>
     <div class="card-container">
-      <!-- Card 1 -->
       <div class="card">
         <img src="icon-png/innovation.png" alt="Innovation Icon">
         <h3>Innovation & Tech</h3>
         <p>Empowering the next generation through AI, digital economy, and smart infrastructure.</p>
         <button>Learn More</button>
       </div>
-
-      <!-- Card 2 -->
       <div class="card">
         <img src="icon-png/planet-earth.png" alt="Sustainability Icon">
         <h3>Green Sustainability</h3>
         <p>Transforming cities and rural areas through clean energy and green policies.</p>
         <button>Get Involved</button>
       </div>
-
-      <!-- Card 3 -->
       <div class="card">
         <img src="icon-png/education-technology.png" alt="Education Icon">
         <h3>Future Education</h3>
         <p>Modernizing education with e-learning, research opportunities, and inclusivity.</p>
         <button>Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Recent News Section ===== -->
+  <section class="news-section">
+    <h2>Recent News</h2>
+
+    <div class="news-card card-left">
+      <div class="news-image">
+        <img src="news-img/smartcity.jpeg" alt="Smart City Project">
+      </div>
+      <div class="news-content">
+        <h3>Smart City Project Begins</h3>
+        <p>The government has launched a new initiative to build smart infrastructure in major districts.</p>
+        <div class="news-meta">
+          <img src="icon-png/news1.jpeg" alt="Channel Logo">
+          <span>Published: 2 hours ago</span>
+        </div>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="news-card card-right">
+      <div class="news-content">
+        <h3>Green Energy Reforms</h3>
+        <p>Solar and wind projects will now cover 40% of national energy needs by 2026, officials say.</p>
+        <div class="news-meta">
+          <img src="icon-png/news2.png" alt="Channel Logo">
+          <span>Published: Yesterday</span>
+        </div>
+        <button>Read More</button>
+      </div>
+      <div class="news-image">
+        <img src="news-img/solar.jpeg" alt="Green Energy Reform">
       </div>
     </div>
   </section>
