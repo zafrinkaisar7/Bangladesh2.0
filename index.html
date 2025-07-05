@@ -4,82 +4,217 @@
   <meta charset="UTF-8">
   <title>Bangladesh 2.0</title>
   <style>
-    
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      margin: 30;
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f9f9f9;
     }
 
-    
-    .header h1 {
-      font-size: 2.em;
-      color: #1f1f1f;
-      margin-right: 60px;
-      margin-left: 60px;
-      margin-bottom: 20px;
+    /* ===== Header ===== */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background-color: #ffffff;
     }
 
-    .header .signup-btn {
+    .header h1 {
+      font-size: 2em;
+      color: #1f1f1f;
+    }
+
+    .signup-btn {
       background-color: white;
       color: #047857;
       padding: 15px 20px;
       font-size: 1em;
-      border: 2px solid #047857; /* ✅ Border added */
+      border: 2px solid #047857;
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin-right: 60px;
-      margin-top: 30px;
-}
-
-    .header {
-     display: flex;
-     justify-content: space-between; /* Pushes left & right content apart */
-     align-items: center;
-  
-  
-}
-
-
-    .header .signup-btn:hover {
-      background-color: #065f46;
     }
 
-    
+    .signup-btn:hover {
+      background-color: #065f46;
+      color: white;
+    }
 
+    /* ===== Banner ===== */
     .banner-image {
-      flex: 1;
-      text-align: middle;
+      text-align: center;
+      margin: 40px 60px;
     }
 
     .banner-image img {
-      width: 200%;
-      max-width: 1400px;
+      width: 100%;
+      max-width: 1200px;
       border-radius: 15px;
-      margin-left: 60px;
-      margin-right: 60px;
-      margin-top: 40px;
-
     }
 
-   
+    /* ===== Vision of Future Section ===== */
+    .vision-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .vision-section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #0f172a;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: translateY(-8px) scale(1.05);
+    }
+
+    .card h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #1e293b;
+    }
+
+    .card p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      color: #4b5563;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .card button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .card:nth-child(1) {
+      background-color: #e0f7fa;
+    }
+
+    .card:nth-child(1) button {
+      background-color: #00acc1;
+      color: white;
+    }
+
+    .card:nth-child(2) {
+      background-color: #e8f5e9;
+    }
+
+    .card:nth-child(2) button {
+      background-color: #43a047;
+      color: white;
+    }
+
+    .card:nth-child(3) {
+      background-color: #fff3e0;
+    }
+
+    .card:nth-child(3) button {
+      background-color: #fb8c00;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .banner-image {
+        margin: 40px 20px;
+      }
+
+      .card-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Header with Sign Up -->
+  <!-- ===== Header ===== -->
   <header class="header">
     <h1>Bangladesh 2.0</h1>
-    <button class="signup-btn">Sign in</button>
+    <button class="signup-btn">Sign In</button>
   </header>
 
-  
-    <div class="banner-image">
-      <img src="b2-images/banner.png" alt="Bangladesh Monument">
+  <!-- ===== Banner ===== -->
+  <div class="banner-image">
+    <img src="b2-images/banner.png" alt="Bangladesh Monument">
+  </div>
+
+  <!-- ===== Vision of Future ===== -->
+  <section class="vision-section">
+    <h2>The Vision of Future</h2>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="icon-png/innovation.png" alt="Innovation Icon">
+        <h3>Innovation & Tech</h3>
+        <p>Empowering the next generation through AI, digital economy, and smart infrastructure.</p>
+        <button>Learn More</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="icon-png/planet-earth.png" alt="Sustainability Icon">
+        <h3>Green Sustainability</h3>
+        <p>Transforming cities and rural areas through clean energy and green policies.</p>
+        <button>Get Involved</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="icon-png/education-technology.png" alt="Education Icon">
+        <h3>Future Education</h3>
+        <p>Modernizing education with e-learning, research opportunities, and inclusivity.</p>
+        <button>Explore</button>
+      </div>
     </div>
   </section>
 
-  
 </body>
 </html>
