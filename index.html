@@ -545,6 +545,101 @@
     flex: 1 1 100%;
   }
 }
+/* ===== Cards Base Style & Hover ===== */
+.card, .donation-card, .news-card {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover, .news-card:hover {
+  background-color: #f0f9ff;
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Donate Section Cards */
+.donation-card {
+  background-color: #f0f9ff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.donation-card:hover {
+  background-color: #bbdefb;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* ===== Buttons Hover Animations ===== */
+button, .signup-btn, .card button, .news-content button, .donate-btn, .newsletter-form button {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover, .signup-btn:hover, .card button:hover, .news-content button:hover, .donate-btn:hover, .newsletter-form button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}
+
+/* ===== Inputs Focus Glow ===== */
+input[type="text"], input[type="email"] {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  box-shadow: 0 0 8px 2px rgba(34, 197, 94, 0.5);
+}
+/* ===== Quote Section ===== */
+.quote-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.quote-section h2 {
+  font-size: 2.5em;
+  color: #0f172a;
+  margin-bottom: 30px;
+}
+
+.quote-wrapper {
+  display: inline-block;
+  max-width: 700px;
+  background-color: #f0f9ff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 4em;
+  color: #0284c7;
+  background-color: #d0eaff;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 6px 15px rgba(2, 132, 199, 0.3);
+}
+
+.quote-text {
+  font-size: 1.3em;
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-style: normal; /* normal text, no italic */
+  line-height: 1.5;
+}
+
+.quote-author {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #64748b;
+}
 
 
   </style>
@@ -660,7 +755,17 @@
     <button type="submit">Subscribe</button>
   </form>
 </section>
-
+<!-- ===== Quote Section ===== -->
+<section class="quote-section">
+  <h2>Quote Section</h2>
+  <div class="quote-wrapper">
+    <div class="quote-icon">❝</div>
+    <p class="quote-text">
+      “Poverty is not created by poor people. It is created by the absence of opportunity.”
+    </p>
+    <p class="quote-author">— Dr. Muhammad Yunus</p>
+  </div>
+</section>
 
 </body>
 </html>
