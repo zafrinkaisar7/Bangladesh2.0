@@ -270,6 +270,283 @@
         height: auto;
       }
     }
+    /* ===== Donate For Bangladesh Section ===== */
+.donate-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.donate-section h2 {
+  font-size: 2.5em;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.donate-section .subtitle {
+  font-size: 1.2em;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.donation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.donation-card {
+  flex: 1 1 200px;
+  background-color: #f0f9ff;
+  border-radius: 12px;
+  padding: 25px 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.donation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.donation-card h3 {
+  font-size: 2em;
+  color: #0284c7; /* blue-ish */
+  margin-bottom: 10px;
+}
+
+.donation-card p {
+  font-size: 1em;
+  color: #334155;
+}
+
+.donation-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: 2px solid #0284c7;
+  margin-bottom: 30px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.donation-input:focus {
+  border-color: #0369a1;
+}
+
+.donate-btn {
+  background-color: #0284c7;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #0369a1;
+  transform: scale(1.05);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .donation-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .donation-card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .donation-input {
+    max-width: 100%;
+  }
+}
+/* ===== Donate For Bangladesh Section ===== */
+.donate-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.donate-section h2 {
+  font-size: 2.5em;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.donate-section .subtitle {
+  font-size: 1.2em;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.donation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.donation-card {
+  flex: 1 1 200px;
+  background-color: #f0f9ff;
+  border-radius: 12px;
+  padding: 25px 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.donation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.donation-card h3 {
+  font-size: 2em;
+  color: #0284c7; /* blue-ish */
+  margin-bottom: 10px;
+}
+
+.donation-card p {
+  font-size: 1em;
+  color: #334155;
+}
+
+.donation-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: 2px solid #0284c7;
+  margin-bottom: 30px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.donation-input:focus {
+  border-color: #0369a1;
+}
+
+.donate-btn {
+  background-color: #0284c7;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #0369a1;
+  transform: scale(1.05);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .donation-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .donation-card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .donation-input {
+    max-width: 100%;
+  }
+}
+/* ===== Newsletter Section ===== */
+.newsletter-section {
+  background-color: #0369a1; /* dark green */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 60px auto;
+  border-radius: 15px;
+}
+
+.newsletter-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.newsletter-section .subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #d1fae5; /* light green */
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1 1 300px;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: 3px solid #34d399; /* lighter green outline */
+}
+
+.newsletter-form button {
+  background-color: #22c55e; /* bright green */
+  color: white;
+  padding: 15px 35px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #2abec0;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    flex: 1 1 100%;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -344,6 +621,46 @@
       </div>
     </div>
   </section>
+  <!-- ===== Donate For Bangladesh Section ===== -->
+<section class="donate-section">
+  <h2>Donate For Bangladesh</h2>
+  <p class="subtitle">Your contribution can make a huge difference. Support the future today!</p>
+
+  <div class="donation-cards">
+    <div class="donation-card">
+      <h3>BDT 10</h3>
+      <p>Help provide clean water</p>
+    </div>
+    <div class="donation-card">
+      <h3>BDT 25</h3>
+      <p>Support education programs</p>
+    </div>
+    <div class="donation-card">
+      <h3>BDT 50</h3>
+      <p>Fund healthcare initiatives</p>
+    </div>
+    <div class="donation-card">
+      <h3>BDT 100</h3>
+      <p>Build sustainable infrastructure</p>
+    </div>
+  </div>
+
+  <input type="text" class="donation-input" placeholder="Enter your donation amount">
+
+  <button class="donate-btn">Donate Now</button>
+</section>
+
+<!-- ===== Newsletter Section ===== -->
+<section class="newsletter-section">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p class="subtitle">Stay updated with the latest news and insights from Bangladesh 2.0.</p>
+  
+  <form class="newsletter-form" action="#" method="post">
+    <input type="email" name="email" placeholder="Enter your email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
 
 </body>
 </html>
